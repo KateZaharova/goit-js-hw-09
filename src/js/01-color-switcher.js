@@ -11,7 +11,7 @@ start.addEventListener("click", (event) => {
         body.style.backgroundColor = getRandomHexColor()
     }, 1000);
       start.disabled = true;
-    if (event.target = start) {
+    if (start === event.target) {
         stop.disabled = false;
     }
 })
