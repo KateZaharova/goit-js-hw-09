@@ -17,3 +17,22 @@ img {
   max-width: 100%;
 }
 
+.timer{
+  display:flex;
+  margin-top: 20px;
+  
+}
+
+.value{
+  display:flex;
+  font-size: 40px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.label {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
