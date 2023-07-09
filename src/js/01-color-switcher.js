@@ -12,7 +12,7 @@ start.addEventListener("click", (event) => {
     }, 1000);
       start.disabled = true;
     if (event.target = start) {
-        return stop.disabled = false;
+        stop.disabled = false;
     }
 })
 
