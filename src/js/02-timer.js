@@ -9,7 +9,7 @@ selectors = {
     dataHours: document.querySelector('span[data-hours]'),
     dataMinutes: document.querySelector('span[data-minutes]'),
     dataSeconds: document.querySelector('span[data-seconds]')
-}
+};
 
 let currentDate = new Date();
 let chosenDate;
