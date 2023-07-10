@@ -32,7 +32,7 @@ const options = {
 };
 flatpickr(selectors.input, options);
 
-function timerCount(event) {
+function timerCount(_) {
     const id = setInterval(() => {
         if (new Date() >= chosenDate) {
             clearInterval(id)
