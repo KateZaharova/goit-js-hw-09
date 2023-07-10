@@ -2,7 +2,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 
 
-selectors = {
+const selectors = {
     input: document.querySelector("#datetime-picker"),
     button: document.querySelector("button"),
     dataDays: document.querySelector('span[data-days]'),
