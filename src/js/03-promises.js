@@ -20,16 +20,16 @@ function createPromise(position, delay) {
   });
 }
 
-selectors.form.addEventListener("submit", handlerClick); //needed for .form
+selectors.form.addEventListener("submit", handlerClick); 
 
 function handlerClick(event) {
   event.preventDefault();
-  let valueDelay = Number(selectors.delay.value);
-  let step = Number(selectors.step.value);
+  let firstDelay = Number(selectors.delay.value);
+  let stepDelay = Number(selectors.step.value);
   let amount = Number(selectors.amount.value);
 
-  for (let i = 1; i <= amount; i += 1) {
-    let promiseDelay = valueDelay + step * i;
+  for (let i = 0; i < amount; i += 1) {
+    let promiseDelay = firstDelay + stepDelay * i;
   
     createPromise(i, promiseDelay)
       .then(({ position, delay }) => {
@@ -41,7 +41,6 @@ function handlerClick(event) {
 
   }
 }
-
 
 
 
